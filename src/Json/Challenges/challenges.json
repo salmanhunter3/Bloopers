@@ -1,0 +1,43 @@
+[
+  {
+    "title": "Try Not To Laugh",
+
+    "description":
+      "Upload your funniest blooper and make the internet laugh.",
+
+    "prize": "$5,000",
+
+    "daysLeft": "12 Days Left",
+
+    "image":
+      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac"
+  },
+
+  {
+    "title": "Gaming Rage Challenge",
+
+    "description":
+      "Share the funniest gaming fail or rage moment.",
+
+    "prize": "$10,000",
+
+    "daysLeft": "7 Days Left",
+
+    "image":
+      "https://images.unsplash.com/photo-1542751371-adc38448a05e"
+  },
+
+  {
+    "title": "Ultimate Meme Battle",
+
+    "description":
+      "Compete with creators in the funniest meme competition.",
+
+    "prize": "$3,000",
+
+    "daysLeft": "18 Days Left",
+
+    "image":
+      "https://images.unsplash.com/photo-1511512578047-dfb367046420"
+  }
+]

@@ -86,6 +86,34 @@
       }
     }
 
+    .dark-footer {
+      background: #0f172a;
+
+      color: white;
+
+      .text-muted {
+        color: #cbd5e1 !important;
+      }
+
+      a {
+        color: #e2e8f0 !important;
+
+        &:hover {
+          color: #60a5fa !important;
+        }
+      }
+
+      h4,
+      h6,
+      p {
+        color: white !important;
+      }
+    }
+
+    .light-footer {
+      background: #f8f9fc;
+    }
+
     .footer-heading {
       font-size: 0.9rem;
       font-weight: 700;

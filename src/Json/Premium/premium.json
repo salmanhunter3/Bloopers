@@ -1,0 +1,48 @@
+[
+  {
+    "title": "Starter",
+
+    "price": "$9",
+
+    "duration": "/month",
+
+    "features": [
+      "HD Video Uploads",
+      "Basic Analytics",
+      "Creator Badge",
+      "5GB Storage"
+    ]
+  },
+
+  {
+    "title": "Pro",
+
+    "price": "$29",
+
+    "duration": "/month",
+
+    "features": [
+      "Unlimited Uploads",
+      "Advanced Analytics",
+      "AI Video Tools",
+      "Verified Creator",
+      "Priority Support"
+    ]
+  },
+
+  {
+    "title": "Elite",
+
+    "price": "$99",
+
+    "duration": "/month",
+
+    "features": [
+      "Everything in Pro",
+      "Custom Branding",
+      "Monetization Tools",
+      "Exclusive Features",
+      "Dedicated Manager"
+    ]
+  }
+]

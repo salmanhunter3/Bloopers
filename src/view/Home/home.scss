@@ -62,9 +62,7 @@
 .trending-section,
 .categories-section {
   padding: 100px 0;
-
-  background: #111827;
-
+  background: #f2df11;
   color: white;
 }
 
@@ -156,6 +154,86 @@
     font-size: 32px;
   }
 }
+
+.premium-cta {
+  padding: 100px 0;
+
+  background: linear-gradient(
+    135deg,
+    #6c3bff,
+    #ff4d8d
+  );
+
+  border-radius: 30px;
+
+  margin: 80px 40px;
+
+  color: white;
+
+  h2 {
+    font-size: 48px;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 18px;
+
+    opacity: 0.9;
+
+    max-width: 700px;
+  }
+
+  .premium-btn {
+    background: white;
+
+    color: #6c3bff;
+
+    border: none;
+
+    padding: 16px 36px;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    border-radius: 14px;
+
+    transition: 0.3s;
+
+    &:hover {
+      transform: translateY(-4px);
+
+      background: #f8f9fa;
+
+      color: #6c3bff;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .premium-cta {
+
+    margin: 60px 20px;
+
+    padding: 60px 30px;
+
+    text-align: center;
+
+    h2 {
+      font-size: 34px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+
 .cta-section {
   padding: 100px 0;
 

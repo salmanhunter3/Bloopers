@@ -1,0 +1,22 @@
+.app {
+  min-height: 100vh;
+
+  transition: 0.3s;
+}
+
+// LIGHT MODE STYLES
+.light {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+// DARK MODE STYLES
+.dark {
+  background: #0f172a;
+  color: white;
+  .hero-section,
+  .trending-section,
+  .categories-section {
+     background: #000000;
+  }
+}

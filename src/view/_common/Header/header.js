@@ -1,4 +1,7 @@
-import React from "react";
+import React, {
+  useEffect,
+  useState
+} from "react";
 
 import {
   Navbar,
@@ -11,20 +14,48 @@ import {
   Link
 } from "react-router-dom";
 
-import {
-  BsChevronRight
-} from "react-icons/bs";
+
 
 import "./header.scss";
 
-function Header() {
+function Header({
+  darkMode,
+  setDarkMode
+}) {
+
+  const [scrollNavbar, setScrollNavbar] =
+    useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrollNavbar(true);
+      } else {
+        setScrollNavbar(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
 
+
+
     <Navbar
       expand="lg"
-      className="custom-navbar"
-
+      fixed="top"
+      className={
+        scrollNavbar
+          ?
+          "custom-navbar scrolled"
+          :
+          "custom-navbar"
+      }
     >
 
       <Container>
@@ -59,34 +90,64 @@ function Header() {
 
             <Nav.Link
               as={Link}
-              to="/landings"
+              to="/challenges"
             >
-              Landings
-              <BsChevronRight className="ms-1" />
+              Challenges
             </Nav.Link>
 
             <Nav.Link
               as={Link}
-              to="/pages"
+              to="/explore"
             >
-              Pages
-              <BsChevronRight className="ms-1" />
+              Explore
             </Nav.Link>
 
             <Nav.Link
               as={Link}
-              to="/documentation"
+              to="/upload"
             >
-              Documentation
-              <BsChevronRight className="ms-1" />
+              Upload
             </Nav.Link>
 
-         
+            {/* CREATOR LINK */}
+
+            <Nav.Link
+              as={Link}
+              to="/creator"
+            >
+              Creators
+            </Nav.Link>
+
+            <Nav.Link
+              as={Link}
+              to="/premium"
+            >
+              Premium
+            </Nav.Link>
 
             <Button
-              className="buy-btn ms-lg-4 mt-3 mt-lg-0"
+              className="theme-btn me-3"
+              onClick={() =>
+                setDarkMode(!darkMode)
+              }
             >
-              Buy Now
+
+              {
+                darkMode
+                  ?
+                  "☀️"
+                  :
+                  "🌙"
+              }
+
+            </Button>
+
+            <Button
+              as={Link}
+              to="/login"
+              className="buy-btn mt-3 mt-lg-0"
+            >
+              Login
             </Button>
 
           </Nav>

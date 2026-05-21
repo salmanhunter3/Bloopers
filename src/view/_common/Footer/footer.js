@@ -8,9 +8,15 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 
-const Footer = () => {
+const Footer = ({ darkMode }) => {
   return (
-    <footer className="bg-light pt-5">
+    <footer className={
+      darkMode
+        ?
+        "footer-section dark-footer"
+        :
+        "footer-section light-footer"
+    }>
       {/* Top Curve Section */}
       <div
         style={{

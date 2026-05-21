@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "title": "Gaming Rage",
+    "views": "4.8M Views",
+    "likes": "320K Likes",
+    "creator": "Alex Carter",
+    "description": "Funny gaming moments.",
+    "video": "/videos/7914811-hd_1080_1920_30fps.mp4"
+  },
+
+  {
+    "id": 2,
+    "title": "Sports Fail",
+    "views": "2.1M Views",
+    "likes": "120K Likes",
+    "creator": "Mike Jordan",
+    "description": "Crazy sports bloopers.",
+    "video": "/videos/7914837-hd_1080_1920_30fps.mp4"
+  },
+
+  {
+    "id": 3,
+    "title": "Funny Animal",
+    "views": "8.2M Views",
+    "likes": "980K Likes",
+    "creator": "Animal Hub",
+    "description": "Funny pet moments.",
+    "video": "/videos/18432556-hd_1080_1920_30fps.mp4"
+  }
+]

@@ -13,6 +13,10 @@ import trendingData from '../../Json/Home/trending.json';
 import categoriesData from '../../Json/Home/categories.json';
 import "./home.scss";
 
+import {
+  Link
+} from "react-router-dom";
+
 
 function Home() {
 
@@ -38,16 +42,20 @@ function Home() {
 
             <div className="hero-buttons">
 
-              <Button className="explore-btn">
-
+              <Button
+                as={Link}
+                to="/explore"
+                className="explore-btn"
+              >
                 {heroData.button1}
-
               </Button>
 
-              <Button className="upload-btn">
-
+              <Button
+                as={Link}
+                to="/upload"
+                className="upload-btn"
+              >
                 {heroData.button2}
-
               </Button>
 
             </div>
@@ -79,7 +87,11 @@ function Home() {
                 key={index}
               >
 
-                <Card className="trending-card">
+                <Card
+                  as={Link}
+                  to="/creator"
+                  className="trending-card"
+                >
 
                   <Card.Img
                     variant="top"
@@ -150,6 +162,48 @@ function Home() {
 
       </section>
 
+      {/* PREMIUM CTA SECTION */}
+
+      <section className="premium-cta">
+
+        <Container>
+
+          <Row className="align-items-center">
+
+            <Col lg={8}>
+
+              <h2>
+                Unlock Premium Creator Tools
+              </h2>
+
+              <p>
+                Get unlimited uploads, AI editing,
+                analytics, verified badges and more.
+              </p>
+
+            </Col>
+
+            <Col
+              lg={4}
+              className="text-lg-end mt-4 mt-lg-0"
+            >
+
+              <Button
+                as={Link}
+                to="/premium"
+                className="premium-btn"
+              >
+                Upgrade Now
+              </Button>
+
+            </Col>
+
+          </Row>
+
+        </Container>
+
+      </section>
+
       {/* CTA SECTION */}
 
       <section className="cta-section">
@@ -193,6 +247,8 @@ function Home() {
         </Container>
 
       </section>
+
+
 
     </>
 
