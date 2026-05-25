@@ -6,6 +6,7 @@
     "likes": "320K Likes",
     "creator": "Alex Carter",
     "description": "Funny gaming moments.",
+    "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e",
     "video": "/videos/7914811-hd_1080_1920_30fps.mp4"
   },
 
@@ -16,6 +17,7 @@
     "likes": "120K Likes",
     "creator": "Mike Jordan",
     "description": "Crazy sports bloopers.",
+    "image": "https://images.unsplash.com/photo-1517649763962-0c623066013b",
     "video": "/videos/7914837-hd_1080_1920_30fps.mp4"
   },
 
@@ -26,6 +28,18 @@
     "likes": "980K Likes",
     "creator": "Animal Hub",
     "description": "Funny pet moments.",
+    "image": "https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=800&q=80",
+    "video": "/videos/18432556-hd_1080_1920_30fps.mp4"
+  }
+,
+  {
+    "id": 4,
+    "title": "Memes Compilation",
+    "views": "8.2M Views",
+    "likes": "980K Likes",
+    "creator": "Animal Hub",
+    "description": "Funny pet moments.",
+    "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80",
     "video": "/videos/18432556-hd_1080_1920_30fps.mp4"
   }
 ]

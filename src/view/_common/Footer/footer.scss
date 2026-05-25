@@ -1,180 +1,82 @@
-/* footer.scss */
+.app-footer {
+  background: linear-gradient(135deg, #0f172a, #111827);
+  color: #cbd5e1;
 
-.footer-section {
-  background: #f8f9fc;
-  overflow: hidden;
+  a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: 0.3s;
 
-  .footer-top {
-    background: linear-gradient(90deg, #005bea 0%, #6a11cb 100%);
-    color: #fff;
-    text-align: center;
-    padding: 90px 0 140px;
-    position: relative;
-
-    border-bottom-left-radius: 50% 12%;
-    border-bottom-right-radius: 50% 12%;
-
-    h1 {
-      font-size: 4rem;
-      font-weight: 700;
-
-      @media (max-width: 768px) {
-        font-size: 2.5rem;
-      }
-    }
-
-    p {
-      color: rgba(255, 255, 255, 0.85);
-      font-size: 1.1rem;
-    }
-
-    .store-buttons {
-      margin-top: 30px;
-
-      img {
-        height: 52px;
-        margin: 0 10px;
-        transition: transform 0.3s ease;
-
-        &:hover {
-          transform: translateY(-3px);
-        }
-
-        @media (max-width: 576px) {
-          height: 45px;
-          margin-bottom: 10px;
-        }
-      }
-    }
-
-    .small-text {
-      margin-top: 18px;
-      font-size: 0.9rem;
-      opacity: 0.8;
+    &:hover {
+      color: #7c3aed;
     }
   }
 
-  .footer-content {
-    padding: 80px 0;
+  .footer-top {
+    padding: 40px 0;
+    text-align: center;
 
-    .brand-title {
-      font-size: 1.8rem;
-      font-weight: 700;
-      color: #6c757d;
-    }
-
-    .brand-subtitle {
-      color: #8b95a1;
-      margin-top: 10px;
+    .footer-logo {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 15px;
     }
 
     .social-icons {
-      margin-top: 20px;
       display: flex;
-      gap: 15px;
-
-      svg {
-        font-size: 1.2rem;
-        color: #8b95a1;
-        cursor: pointer;
-        transition: all 0.3s ease;
-
-        &:hover {
-          color: #005bea;
-          transform: translateY(-2px);
-        }
-      }
-    }
-
-    .dark-footer {
-      background: #0f172a;
-
-      color: white;
-
-      .text-muted {
-        color: #cbd5e1 !important;
-      }
+      gap: 20px;
+      justify-content: center;
 
       a {
-        color: #e2e8f0 !important;
+        font-size: 1.4rem;
+        color: #cbd5e1;
 
         &:hover {
-          color: #60a5fa !important;
+          color: #7c3aed;
+          transform: scale(1.2);
         }
       }
-
-      h4,
-      h6,
-      p {
-        color: white !important;
-      }
     }
+  }
 
-    .light-footer {
-      background: #f8f9fc;
-    }
+  .footer-middle {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 
-    .footer-heading {
-      font-size: 0.9rem;
+    h5 {
       font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: #8b95a1;
       margin-bottom: 20px;
+      color: #fff;
     }
 
-    .footer-links {
+    ul {
       list-style: none;
       padding: 0;
 
       li {
         margin-bottom: 12px;
+      }
+    }
 
-        a {
-          text-decoration: none;
-          color: #6c757d;
-          transition: all 0.3s ease;
+    .app-buttons {
+      .btn {
+        background: #1e293b;
+        color: #fff;
+        border-radius: 12px;
+        padding: 8px 16px;
+        font-weight: 600;
 
-          &:hover {
-            color: #005bea;
-            padding-left: 4px;
-          }
+        &:hover {
+          background: #7c3aed;
         }
       }
     }
+  }
+  
 
-    hr {
-      margin: 50px 0 30px;
-      border-color: #dee2e6;
-    }
-
-    .footer-bottom {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 15px;
-
-      p {
-        margin: 0;
-        color: #8b95a1;
-      }
-
-      .bottom-links {
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-
-        a {
-          text-decoration: none;
-          color: #8b95a1;
-          transition: color 0.3s ease;
-
-          &:hover {
-            color: #005bea;
-          }
-        }
-      }
-    }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-size: 0.9rem;
   }
 }

@@ -1,6 +1,7 @@
-// Footer.jsx
 import React from "react";
+
 import "bootstrap/dist/css/bootstrap.min.css";
+
 import {
   FaInstagram,
   FaFacebookF,
@@ -8,194 +9,229 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 
+import {
+  Link
+} from "react-router-dom";
+
 const Footer = ({ darkMode }) => {
+
   return (
-    <footer className={
-      darkMode
-        ?
-        "footer-section dark-footer"
-        :
-        "footer-section light-footer"
-    }>
-      {/* Top Curve Section */}
-      <div
-        style={{
-          background: "linear-gradient(90deg, #005bea 0%, #6a11cb 100%)",
-          borderBottomLeftRadius: "50% 10%",
-          borderBottomRightRadius: "50% 10%",
-          color: "#fff",
-          padding: "80px 0 120px",
-          textAlign: "center",
-        }}
-      >
-        <div className="container">
-          <h1 className="fw-bold display-4">Get the app!</h1>
 
-          <p className="mt-3 fs-5 text-light">
-            Buy and sell items from your device with our new mobile app!
-          </p>
+    <footer
+      className={
+        darkMode
+          ?
+          "footer-section dark-footer"
+          :
+          "footer-section light-footer"
+      }
+    >
 
+      <div className="app-footer">
 
-          <p className="mt-3 small text-light">
-            * Requires Android OS 4.3+ or Apple iOS 9.3+
-          </p>
-        </div>
-      </div>
+        {/* TOP */}
 
-      {/* Footer Links */}
-      <div className="container py-5">
-        <div className="row gy-4">
-          {/* Brand */}
-          <div className="col-md-3">
-            <h4 className="fw-bold text-secondary">BLOOPERS</h4>
+        <div className="footer-top">
 
-            <p className="text-muted">Build better websites</p>
+          <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center">
 
-            <div className="d-flex gap-3 fs-5 text-secondary">
-              <FaInstagram />
-              <FaFacebookF />
-              <FaGithub />
-              <FaTwitter />
+            <h2 className="footer-logo">
+
+              BLOOPERS
+
+            </h2>
+
+            <div className="social-icons">
+
+              <Link to="/">
+                <FaInstagram />
+              </Link>
+
+              <Link to="/">
+                <FaFacebookF />
+              </Link>
+
+              <Link to="/">
+                <FaTwitter />
+              </Link>
+
+              <Link to="/">
+                <FaGithub />
+              </Link>
+
             </div>
+
           </div>
 
-          {/* Product */}
-          <div className="col-md-3">
-            <h6 className="fw-bold text-uppercase text-secondary mb-3">
-              Product
-            </h6>
-
-            <ul className="list-unstyled">
-              <li className="mb-2">
-                <a href="/" className="text-decoration-none text-muted">
-                  Landing
-                </a>
-              </li>
-
-              <li className="mb-2">
-                <a href="/" className="text-decoration-none text-muted">
-                  Pages
-                </a>
-              </li>
-
-              <li className="mb-2">
-                <a href="/" className="text-decoration-none text-muted">
-                  Sections
-                </a>
-              </li>
-
-              <li className="mb-2">
-                <a href="/" className="text-decoration-none text-muted">
-                  Documentation
-                </a>
-              </li>
-
-              <li className="mb-2">
-                <a href="/" className="text-decoration-none text-muted">
-                  Changelog
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Technical */}
-          <div className="col-md-3">
-            <h6 className="fw-bold text-uppercase text-secondary mb-3">
-              Technical
-            </h6>
-
-            <ul className="list-unstyled">
-              <li className="mb-2">
-                <a href="/" className="text-decoration-none text-muted">
-                  Documentation
-                </a>
-              </li>
-
-              <li className="mb-2">
-                <a href="/" className="text-decoration-none text-muted">
-                  Changelog
-                </a>
-              </li>
-
-              <li className="mb-2">
-                <a href="/" className="text-decoration-none text-muted">
-                  Theme Customizer
-                </a>
-              </li>
-
-              <li className="mb-2">
-                <a href="/" className="text-decoration-none text-muted">
-                  UI Kit
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Includes */}
-          <div className="col-md-3">
-            <h6 className="fw-bold text-uppercase text-secondary mb-3">
-              Includes
-            </h6>
-
-            <ul className="list-unstyled">
-              <li className="mb-2">
-                <a href="/" className="text-decoration-none text-muted">
-                  Utilities
-                </a>
-              </li>
-
-              <li className="mb-2">
-                <a href="/" className="text-decoration-none text-muted">
-                  Components
-                </a>
-              </li>
-
-              <li className="mb-2">
-                <a href="/" className="text-decoration-none text-muted">
-                  Layouts
-                </a>
-              </li>
-
-              <li className="mb-2">
-                <a href="/" className="text-decoration-none text-muted">
-                  Code Samples
-                </a>
-              </li>
-
-              <li className="mb-2">
-                <a href="/" className="text-decoration-none text-muted">
-                  Products
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
 
-        {/* Bottom */}
-        <hr className="my-4" />
+        {/* MIDDLE */}
 
-        <div className="d-flex flex-column flex-md-row justify-content-between align-items-center">
-          <p className="text-muted mb-2 mb-md-0">
-            © 2025 Your Company. All rights reserved.
+        <div className="footer-middle container py-5">
+
+          <div className="row">
+
+            {/* PRODUCT */}
+
+            <div className="col-md-3 mb-4 mb-md-0">
+
+              <h5>
+                Product
+              </h5>
+
+              <ul>
+
+                <li>
+                  <Link to="/">
+                    Landing
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="/">
+                    Pages
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="/">
+                    Features
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="/">
+                    Documentation
+                  </Link>
+                </li>
+
+              </ul>
+
+            </div>
+
+            {/* RESOURCES */}
+
+            <div className="col-md-3 mb-4 mb-md-0">
+
+              <h5>
+                Resources
+              </h5>
+
+              <ul>
+
+                <li>
+                  <Link to="/">
+                    Blog
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="/">
+                    Tutorials
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="/">
+                    Guides
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="/">
+                    Community
+                  </Link>
+                </li>
+
+              </ul>
+
+            </div>
+
+            {/* SUPPORT */}
+
+            <div className="col-md-3 mb-4 mb-md-0">
+
+              <h5>
+                Support
+              </h5>
+
+              <ul>
+
+                <li>
+                  <Link to="/">
+                    Help Center
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="/">
+                    Contact Us
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="/">
+                    Privacy Policy
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="/">
+                    Terms Of Service
+                  </Link>
+                </li>
+
+              </ul>
+
+            </div>
+
+            {/* APP BUTTONS */}
+
+            <div className="col-md-3">
+
+              <h5>
+                Download App
+              </h5>
+
+              <div className="app-buttons mt-3">
+
+                <button className="btn btn-dark">
+
+                  App Store
+
+                </button>
+
+                <button className="btn btn-dark ms-2">
+
+                  Google Play
+
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* BOTTOM */}
+
+        <div className="footer-bottom py-4 text-center">
+
+          <p className="mb-0">
+
+            © 2025 BLOOPERS.
+            All Rights Reserved.
+
           </p>
 
-          <div className="d-flex gap-3">
-            <a href="/" className="text-decoration-none text-muted">
-              Privacy Policy
-            </a>
-
-            <a href="/" className="text-decoration-none text-muted">
-              Terms & Conditions
-            </a>
-
-            <a href="/" className="text-decoration-none text-muted">
-              License
-            </a>
-          </div>
         </div>
+
       </div>
+
     </footer>
   );
 };
 
-export default Footer; 
+export default Footer;
